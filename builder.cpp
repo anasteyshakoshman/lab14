@@ -46,11 +46,11 @@ int main(int argc, char *argv[])
 {
 	boost::program_options::options_description options("Allowed options");
 	options.add_options()
-		("help", "выводим вспомогательное сообщение")
-		("config", boost::program_options::value<string>(), "указываем конфигурацию сборки (по умолчанию Debug)")
-		("install", "добавляем этап установки (в директорию _install)")
-		("pack", "добавляем этап упакови\n(в архив формата tar.gz)")
-		("timeout", boost::program_options::value<int>(), "указываем время ожидания (в секундах)");
+		("help", "РІС‹РІРѕРґРёРј РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ")
+		("config", boost::program_options::value<string>(), "СѓРєР°Р·С‹РІР°РµРј РєРѕРЅС„РёРіСѓСЂР°С†РёСЋ СЃР±РѕСЂРєРё (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ Debug)")
+		("install", "РґРѕР±Р°РІР»СЏРµРј СЌС‚Р°Рї СѓСЃС‚Р°РЅРѕРІРєРё (РІ РґРёСЂРµРєС‚РѕСЂРёСЋ _install)")
+		("pack", "РґРѕР±Р°РІР»СЏРµРј СЌС‚Р°Рї СѓРїР°РєРѕРІРё (РІ Р°СЂС…РёРІ С„РѕСЂРјР°С‚Р° tar.gz)")
+		("timeout", boost::program_options::value<int>(), "СѓРєР°Р·С‹РІР°РµРј РІСЂРµРјСЏ РѕР¶РёРґР°РЅРёСЏ (РІ СЃРµРєСѓРЅРґР°С…)");
 	boost::program_options::variables_map varMap;
 	boost::program_options::store(boost::program_options::parse_command_line(argc, argv, options), varMap);
 	boost::program_options::notify(varMap);
